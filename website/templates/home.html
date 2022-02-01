@@ -1,0 +1,33 @@
+<!--
+ * @Date: 2021-10-30 20:57:31
+ * @LastEditors: GC
+ * @LastEditTime: 2021-11-02 15:11:30
+ * @FilePath: \Flask-Project\website\templates\home.html
+-->
+{% extends "base.html" %} {% block title %} Home {% endblock %} {} {% block
+content %}
+<h1 align="center">Notes</h1>
+<ul class="list-group list-group-flush" id="notes">
+  {% for note in user.notes %}
+  <li class="list-group-item">
+    {{ note.data }}
+    <button type="button" , class="close" , onClick="deleteNote({{ note.id }})">
+      <span class="aria-hidden">&times;</span>
+    </button>
+  </li>
+  {% endfor %}
+</ul>
+<form method="POST">
+  <textarea
+    name="note"
+    id="note"
+    cols="30"
+    rows="10"
+    class="form-control"
+  ></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add Note</button>
+  </div>
+</form>
+{% endblock %}

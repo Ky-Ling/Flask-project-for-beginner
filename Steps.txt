@@ -1,0 +1,19 @@
+1: Creating a Flask app
+2: Creating routes/views
+3: HTML templates
+4: Sign up page HTML
+5: Login page HTML
+6: HTTP requests
+7: Handling POST requests
+8: Message flashing
+9: Flask SQLAlchemy set up
+10: Database models
+11: Foreign key relationships
+12: Database creation
+13: Creating new user accounts
+14: Logging in users
+15: Flask Login Module
+16: Checking if user is logged in
+17: Notes HTML
+18: Adding user Notes
+19: Deleting user Notes
